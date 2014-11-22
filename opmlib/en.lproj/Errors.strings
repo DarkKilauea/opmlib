@@ -1,0 +1,16 @@
+/* 
+  Errors.strings
+  opmlib
+
+  Created by Joshua Jones on 11/21/14.
+  Copyright (c) 2014 Joshua Jones. All rights reserved.
+*/
+
+/* Error string used for unknown error types. */
+"Unknown" = "An unknown error occurred.";
+
+"PackageMetadata_ExpectedDictionary" = "Package Metadata must be a JSON object.";
+"PackageMetadata_ExpectedIdentifer" = "Package Metadata must contain an identifer field.";
+"PackageMetadata_ExpectedVersion" = "Package Metadata must contain a version field.";
+"PackageMetadata_ExpectedSubArray" = "Expected %@ to be a JSON array.";
+"PackageMetadata_ExpectedStringsInSubArray" = "Expected %@ to contain only strings.";

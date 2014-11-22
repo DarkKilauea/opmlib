@@ -14,6 +14,5 @@ FOUNDATION_EXPORT double opmlibVersionNumber;
 //! Project version string for opmlib.
 FOUNDATION_EXPORT const unsigned char opmlibVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <opmlib/PublicHeader.h>
-
-
+#import <opmlib/PackageMetadata.h>
+#import <opmlib/NSError+OpmLib.h>

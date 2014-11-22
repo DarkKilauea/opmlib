@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		421336911A202C8B00E4A888 /* opmlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 421336901A202C8B00E4A888 /* opmlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421336971A202C8B00E4A888 /* opmlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4213368B1A202C8B00E4A888 /* opmlib.framework */; };
-		4213369E1A202C8B00E4A888 /* opmlibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4213369D1A202C8B00E4A888 /* opmlibTests.m */; };
+		421336BD1A202F0A00E4A888 /* PackageMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 421336BB1A202F0A00E4A888 /* PackageMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421336BE1A202F0A00E4A888 /* PackageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 421336BC1A202F0A00E4A888 /* PackageMetadata.m */; };
+		421336C01A20336C00E4A888 /* PackageMetadataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421336BF1A20336C00E4A888 /* PackageMetadataTests.m */; };
+		421336C51A203A2200E4A888 /* NSError+OpmLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 421336C31A203A2200E4A888 /* NSError+OpmLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421336C61A203A2200E4A888 /* NSError+OpmLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 421336C41A203A2200E4A888 /* NSError+OpmLib.m */; };
+		421336C91A20439F00E4A888 /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421336CB1A20439F00E4A888 /* Errors.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +33,12 @@
 		421336901A202C8B00E4A888 /* opmlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opmlib.h; sourceTree = "<group>"; };
 		421336961A202C8B00E4A888 /* opmlibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = opmlibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4213369C1A202C8B00E4A888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4213369D1A202C8B00E4A888 /* opmlibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = opmlibTests.m; sourceTree = "<group>"; };
+		421336BB1A202F0A00E4A888 /* PackageMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageMetadata.h; sourceTree = "<group>"; };
+		421336BC1A202F0A00E4A888 /* PackageMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageMetadata.m; sourceTree = "<group>"; };
+		421336BF1A20336C00E4A888 /* PackageMetadataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageMetadataTests.m; sourceTree = "<group>"; };
+		421336C31A203A2200E4A888 /* NSError+OpmLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+OpmLib.h"; sourceTree = "<group>"; };
+		421336C41A203A2200E4A888 /* NSError+OpmLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+OpmLib.m"; sourceTree = "<group>"; };
+		421336CA1A20439F00E4A888 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Errors.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				421336901A202C8B00E4A888 /* opmlib.h */,
+				421336C31A203A2200E4A888 /* NSError+OpmLib.h */,
+				421336C41A203A2200E4A888 /* NSError+OpmLib.m */,
+				421336BB1A202F0A00E4A888 /* PackageMetadata.h */,
+				421336BC1A202F0A00E4A888 /* PackageMetadata.m */,
 				4213368E1A202C8B00E4A888 /* Supporting Files */,
 			);
 			path = opmlib;
@@ -81,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4213368F1A202C8B00E4A888 /* Info.plist */,
+				421336CB1A20439F00E4A888 /* Errors.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -88,7 +103,7 @@
 		4213369A1A202C8B00E4A888 /* opmlibTests */ = {
 			isa = PBXGroup;
 			children = (
-				4213369D1A202C8B00E4A888 /* opmlibTests.m */,
+				421336BF1A20336C00E4A888 /* PackageMetadataTests.m */,
 				4213369B1A202C8B00E4A888 /* Supporting Files */,
 			);
 			path = opmlibTests;
@@ -109,7 +124,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421336BD1A202F0A00E4A888 /* PackageMetadata.h in Headers */,
 				421336911A202C8B00E4A888 /* opmlib.h in Headers */,
+				421336C51A203A2200E4A888 /* NSError+OpmLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421336C91A20439F00E4A888 /* Errors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421336C61A203A2200E4A888 /* NSError+OpmLib.m in Sources */,
+				421336BE1A202F0A00E4A888 /* PackageMetadata.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4213369E1A202C8B00E4A888 /* opmlibTests.m in Sources */,
+				421336C01A20336C00E4A888 /* PackageMetadataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +249,17 @@
 			targetProxy = 421336981A202C8B00E4A888 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		421336CB1A20439F00E4A888 /* Errors.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				421336CA1A20439F00E4A888 /* en */,
+			);
+			name = Errors.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4213369F1A202C8B00E4A888 /* Debug */ = {
@@ -396,6 +427,7 @@
 				421336A31A202C8B00E4A888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421336A41A202C8B00E4A888 /* Build configuration list for PBXNativeTarget "opmlibTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +436,7 @@
 				421336A61A202C8B00E4A888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
