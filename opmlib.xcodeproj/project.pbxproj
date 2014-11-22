@@ -15,6 +15,8 @@
 		421336C51A203A2200E4A888 /* NSError+OpmLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 421336C31A203A2200E4A888 /* NSError+OpmLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421336C61A203A2200E4A888 /* NSError+OpmLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 421336C41A203A2200E4A888 /* NSError+OpmLib.m */; };
 		421336C91A20439F00E4A888 /* Errors.strings in Resources */ = {isa = PBXBuildFile; fileRef = 421336CB1A20439F00E4A888 /* Errors.strings */; };
+		42DC52941A2121DA00E7724A /* AsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DC52921A2121DA00E7724A /* AsyncOperation.h */; };
+		42DC52951A2121DA00E7724A /* AsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DC52931A2121DA00E7724A /* AsyncOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		421336C31A203A2200E4A888 /* NSError+OpmLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+OpmLib.h"; sourceTree = "<group>"; };
 		421336C41A203A2200E4A888 /* NSError+OpmLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+OpmLib.m"; sourceTree = "<group>"; };
 		421336CA1A20439F00E4A888 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Errors.strings; sourceTree = "<group>"; };
+		42DC52921A2121DA00E7724A /* AsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOperation.h; sourceTree = "<group>"; };
+		42DC52931A2121DA00E7724A /* AsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +85,13 @@
 		4213368D1A202C8B00E4A888 /* opmlib */ = {
 			isa = PBXGroup;
 			children = (
+				42DC52911A2121A100E7724A /* Operations */,
+				4213368E1A202C8B00E4A888 /* Supporting Files */,
 				421336901A202C8B00E4A888 /* opmlib.h */,
 				421336C31A203A2200E4A888 /* NSError+OpmLib.h */,
 				421336C41A203A2200E4A888 /* NSError+OpmLib.m */,
 				421336BB1A202F0A00E4A888 /* PackageMetadata.h */,
 				421336BC1A202F0A00E4A888 /* PackageMetadata.m */,
-				4213368E1A202C8B00E4A888 /* Supporting Files */,
 			);
 			path = opmlib;
 			sourceTree = "<group>";
@@ -103,8 +108,8 @@
 		4213369A1A202C8B00E4A888 /* opmlibTests */ = {
 			isa = PBXGroup;
 			children = (
-				421336BF1A20336C00E4A888 /* PackageMetadataTests.m */,
 				4213369B1A202C8B00E4A888 /* Supporting Files */,
+				421336BF1A20336C00E4A888 /* PackageMetadataTests.m */,
 			);
 			path = opmlibTests;
 			sourceTree = "<group>";
@@ -117,6 +122,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		42DC52911A2121A100E7724A /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				42DC52921A2121DA00E7724A /* AsyncOperation.h */,
+				42DC52931A2121DA00E7724A /* AsyncOperation.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -125,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421336BD1A202F0A00E4A888 /* PackageMetadata.h in Headers */,
+				42DC52941A2121DA00E7724A /* AsyncOperation.h in Headers */,
 				421336911A202C8B00E4A888 /* opmlib.h in Headers */,
 				421336C51A203A2200E4A888 /* NSError+OpmLib.h in Headers */,
 			);
@@ -227,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DC52951A2121DA00E7724A /* AsyncOperation.m in Sources */,
 				421336C61A203A2200E4A888 /* NSError+OpmLib.m in Sources */,
 				421336BE1A202F0A00E4A888 /* PackageMetadata.m in Sources */,
 			);
